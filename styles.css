@@ -1,0 +1,705 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  body {
+    background-image:url("love.jpg");
+    padding:240px 10px 80px;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+  }
+  
+  .container {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  
+  }
+  
+  .card{
+    height:200px;
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier((.28,-0.03,0,.99));
+    box-shadow: 0px 10px 30px -5px rgba(0,0,00.8);
+  }
+  .textbox {
+    text-align: center;
+    font-size: 40px;
+    color:yellow;
+    margin-top: 30px;
+    animation: move 18s linear infinite;
+  }
+  @keyframes move {
+    0% {
+      transform:translateX(-50%);  
+    }50% {
+      transform:translateX(50%)
+    }
+    100% {
+      transform:translateX(100%);
+    }
+  }
+  
+  .card > .row {
+    color:white;
+    display:flex;
+    flex-wrap: nowrap;
+    height:auto;
+  
+  }
+  .card >.row >.icon {
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+  
+  }
+  .card >.row >.description {
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    overflow: visible;
+    height: 100px;
+    width: 300px;
+    opacity:0;
+    transform:translateY(30px);
+    transition-delay: .5s;
+    transition:all .5s ease;
+  }
+  .description p {
+    color:#2132ce;
+    padding-top: 5px;
+  }
+  .description h4 {
+    color: red;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding:160px 40px 80px 20px;
+  }
+  .description h1 {
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding:90px 50px 20px 10px;
+    
+  
+  }.description h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size:10px;
+    padding:80px 50px 30px 15px;
+    
+  }
+  input {
+    display: none;
+  }
+  input:checked+label {
+    width: 600px;
+  }
+  
+  input:checked+label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+  
+  .card[for="c1"] {
+    background-image:url('./image1.jpg') ;
+  }
+  .card[for="c2"] {
+    background-image: url('./image4.jpg.jpeg') ;
+  }
+  .card[for="c3"] {
+    background-image:url('./image2.jpg.jpeg')  ;
+  }
+  .card[for="c4"] {
+    background-image:url('./cat-party.gif')  ;
+  }
+  @media (orientation:landscape) {
+    body {
+        background-image:url("love.jpg");
+        padding:50px 90px 150px 90px;
+      }
+      .wrapper {
+        width: 100%;
+        display: flex;
+      }
+      
+      .container {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+      
+      }
+      
+      .card{
+        height:300px;
+        width: 80px;
+        border-radius: .75rem;
+        background-size: cover;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 2rem;
+        margin: 0 10px;
+        display: flex;
+        align-items: flex-end;
+        transition: .6s cubic-bezier((.28,-0.03,0,.99));
+        box-shadow: 0px 10px 30px -5px rgba(0,0,00.8);
+      }
+      .textbox {
+        text-align: center;
+        font-size: 30px;
+        color:yellow;
+        margin-top:10px;
+        animation: move 18s linear infinite;
+      }
+      @keyframes move {
+        0% {
+          transform:translateX(-50%);  
+        }50% {
+          transform:translateX(50%)
+        }
+        100% {
+          transform:translateX(100%);
+        }
+      }
+      
+      .card > .row {
+        color:white;
+        display:flex;
+        flex-wrap: nowrap;
+        height:auto;
+      
+      }
+      .card >.row >.icon {
+        
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+      
+      }
+      .card >.row >.description {
+        display:flex;
+        justify-content:center;
+        flex-direction: column;
+        overflow: visible;
+        height: 100px;
+        width: 300px;
+        opacity:0;
+        transform:translateY(30px);
+        transition-delay: .5s;
+        transition:all .5s ease;
+      }
+      .description p {
+        color:#2132ce;
+        padding-top: 5px;
+      }
+      .description h4 {
+        color: red;
+        text-transform: uppercase;
+        font-size: 10px;
+        padding:160px 50px 80px 20px;
+      }
+      .description h1 {
+        color: black;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding:150px 0px 80px 30px;
+        
+      
+      }.description h2 {
+        color: white;
+        text-transform: uppercase;
+        font-size:10px;
+        padding:150px 0px 90px 30px;
+        
+      }
+      input {
+        display: none;
+      }
+      input:checked+label {
+        width: 600px;
+      }
+      
+      input:checked+label .description {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+      }
+      @media (orientation:portrait) {
+        body {
+            background-image:url("love.jpg");
+            padding:50px 90px 150px 90px;
+          }
+          .wrapper {
+            width: 100%;
+            display: flex;
+          }
+          
+          .container {
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+          
+          }
+          
+          .card{
+            height:300px;
+            width: 80px;
+            border-radius: .75rem;
+            background-size: cover;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 2rem;
+            margin: 0 10px;
+            display: flex;
+            align-items: flex-end;
+            transition: .6s cubic-bezier((.28,-0.03,0,.99));
+            box-shadow: 0px 10px 30px -5px rgba(0,0,00.8);
+          }
+          .textbox {
+            text-align: center;
+            font-size: 30px;
+            color:yellow;
+            margin-top:10px;
+            animation: move 18s linear infinite;
+          }
+          @keyframes move {
+            0% {
+              transform:translateX(-50%);  
+            }50% {
+              transform:translateX(50%)
+            }
+            100% {
+              transform:translateX(100%);
+            }
+          }
+          
+          .card > .row {
+            color:white;
+            display:flex;
+            flex-wrap: nowrap;
+            height:auto;
+          
+          }
+          .card >.row >.icon {
+            
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:0;
+          
+          }
+          .card >.row >.description {
+            display:flex;
+            justify-content:center;
+            flex-direction: column;
+            overflow: visible;
+            height: 100px;
+            width: 300px;
+            opacity:0;
+            transform:translateY(30px);
+            transition-delay: .5s;
+            transition:all .5s ease;
+          }
+          .description p {
+            color:#2132ce;
+            padding-top: 5px;
+          }
+          .description h4 {
+            color: red;
+            text-transform: uppercase;
+            font-size: 10px;
+            padding:160px 50px 80px 20px;
+          }
+          .description h1 {
+            color: black;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding:150px 0px 80px 30px;
+            
+          
+          }.description h2 {
+            color: white;
+            text-transform: uppercase;
+            font-size:10px;
+            padding:150px 0px 90px 30px;
+            
+          }
+          input {
+            display: none;
+          }
+          input:checked+label {
+            width: 600px;
+          }
+          
+          input:checked+label .description {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+          }
+        }    
+
+  }
+  @media only screen and (min-width:768px) {
+    body {
+        background-image:url("love.jpg");
+        padding:300px 180px 150px 60px;
+      }
+      .wrapper {
+        width: 100%;
+        display: flex;
+      }
+      
+      .container {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+      
+      }
+      
+      .card{
+        height:300px;
+        width: 80px;
+        border-radius: .75rem;
+        background-size: cover;
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 2rem;
+        margin: 0 10px;
+        display: flex;
+        align-items: flex-end;
+        transition: .6s cubic-bezier((.28,-0.03,0,.99));
+        box-shadow: 0px 10px 30px -5px rgba(0,0,00.8);
+      }
+      .textbox {
+        text-align: center;
+        font-size: 30px;
+        color:yellow;
+        margin-top:10px;
+        animation: move 18s linear infinite;
+      }
+      @keyframes move {
+        0% {
+          transform:translateX(-50%);  
+        }50% {
+          transform:translateX(50%)
+        }
+        100% {
+          transform:translateX(100%);
+        }
+      }
+      
+      .card > .row {
+        color:white;
+        display:flex;
+        flex-wrap: nowrap;
+        height:auto;
+      
+      }
+      .card >.row >.icon {
+        
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+      
+      }
+      .card >.row >.description {
+        display:flex;
+        justify-content:center;
+        flex-direction: column;
+        overflow: visible;
+        height: 100px;
+        width: 300px;
+        opacity:0;
+        transform:translateY(30px);
+        transition-delay: .5s;
+        transition:all .5s ease;
+      }
+      .description p {
+        color:#2132ce;
+        padding-top: 5px;
+      }
+      .description h4 {
+        color: red;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding:190px 50px 90px 25px;
+      }
+      .description h1 {
+        color: black;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding:150px 30px 90px 20px;
+        
+      
+      }.description h2 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding:90px 0px 70px 20px;
+        
+      }
+      input {
+        display: none;
+      }
+      input:checked+label {
+        width: 600px;
+      }
+      
+      input:checked+label .description {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+      }
+    }
+    @media only screen and (min-width:768px) and (orientation:landscape){
+      body {
+          background-image:url("love.jpg");
+          padding:150px 360px 150px 180px;
+        }
+        .wrapper {
+          width: 100%;
+          display: flex;
+        }
+        
+        .container {
+          width: 100%;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: center;
+        
+        }
+        
+        .card{
+          height:300px;
+          width: 80px;
+          border-radius: .75rem;
+          background-size: cover;
+          cursor: pointer;
+          overflow: hidden;
+          border-radius: 2rem;
+          margin: 0 10px;
+          display: flex;
+          align-items: flex-end;
+          transition: .6s cubic-bezier((.28,-0.03,0,.99));
+          box-shadow: 0px 10px 30px -5px rgba(0,0,00.8);
+        }
+        .textbox {
+          text-align: center;
+          font-size: 30px;
+          color:yellow;
+          margin-top:10px;
+          animation: move 18s linear infinite;
+        }
+        @keyframes move {
+          0% {
+            transform:translateX(-50%);  
+          }50% {
+            transform:translateX(50%)
+          }
+          100% {
+            transform:translateX(100%);
+          }
+        }
+        
+        .card > .row {
+          color:white;
+          display:flex;
+          flex-wrap: nowrap;
+          height:auto;
+        
+        }
+        .card >.row >.icon {
+          
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin:0;
+        
+        }
+        .card >.row >.description {
+          display:flex;
+          justify-content:center;
+          flex-direction: column;
+          overflow: visible;
+          height: 100px;
+          width: 300px;
+          opacity:0;
+          transform:translateY(30px);
+          transition-delay: .5s;
+          transition:all .5s ease;
+        }
+        .description p {
+          color:#2132ce;
+          padding-top: 5px;
+        }
+        .description h4 {
+          color: red;
+          text-transform: uppercase;
+          font-size: 10px;
+          padding:190px 50px 110px 25px;
+        }
+        .description h1 {
+          color: black;
+          font-size: 16px;
+          text-transform: uppercase;
+          padding:150px 30px 90px 20px;
+          
+        
+        }.description h2 {
+          color: white;
+          text-transform: uppercase;
+          font-size: 10px;
+          padding:90px 0px 50px 20px;
+          
+        }
+        input {
+          display: none;
+        }
+        input:checked+label {
+          width: 600px;
+        }
+        
+        input:checked+label .description {
+          opacity: 1 !important;
+          transform: translateY(0) !important;
+        }
+  
+    }
+    @media only screen and (min-width:1000px) {
+      body {
+          background-image:url("love.jpg");
+          padding:50px 180px 150px 180px;
+        }
+        .wrapper {
+          width: 100%;
+          display: flex;
+        }
+        
+        .container {
+          width: 100%;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: center;
+        
+        }
+        
+        .card{
+          height:500px;
+          width: 80px;
+          border-radius: .75rem;
+          background-size: cover;
+          cursor: pointer;
+          overflow: hidden;
+          border-radius: 2rem;
+          margin: 0 10px;
+          display: flex;
+          align-items: flex-end;
+          transition: .6s cubic-bezier((.28,-0.03,0,.99));
+          box-shadow: 0px 10px 30px -5px rgba(0,0,00.8);
+        }
+        .textbox {
+          text-align: center;
+          font-size: 30px;
+          color:yellow;
+          margin-top:10px;
+          animation: move 18s linear infinite;
+        }
+        @keyframes move {
+          0% {
+            transform:translateX(-50%);  
+          }50% {
+            transform:translateX(50%)
+          }
+          100% {
+            transform:translateX(100%);
+          }
+        }
+        
+        .card > .row {
+          color:white;
+          display:flex;
+          flex-wrap: nowrap;
+          height:auto;
+        
+        }
+        .card >.row >.icon {
+          
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin:0;
+        
+        }
+        .card >.row >.description {
+          display:flex;
+          justify-content:center;
+          flex-direction: column;
+          overflow: visible;
+          height: 100px;
+          width: 300px;
+          opacity:0;
+          transform:translateY(30px);
+          transition-delay: .5s;
+          transition:all .5s ease;
+        }
+        .description p {
+          color:#2132ce;
+          padding-top: 5px;
+        }
+        .description h4 {
+          color: red;
+          text-transform: uppercase;
+          font-size: 12px;
+          padding:190px 50px 100px 25px;
+        }
+        .description h1 {
+          color: black;
+          font-size: 18px;
+          text-transform: uppercase;
+          padding:150px 30px 90px 20px;
+          
+        
+        }.description h2 {
+          color: white;
+          text-transform: uppercase;
+          font-size: 14px;
+          padding:90px 0px 70px 20px;
+          
+        }
+        input {
+          display: none;
+        }
+        input:checked+label {
+          width: 600px;
+        }
+        
+        input:checked+label .description {
+          opacity: 1 !important;
+          transform: translateY(0) !important;
+        }
+      }
