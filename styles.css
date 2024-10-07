@@ -9,6 +9,8 @@
   body {
     background-image:url("love.jpg");
     padding:240px 10px 80px;
+    background-size:cover;
+    background-repeat:no-repeat;
   }
   .wrapper {
     width: 100%;
