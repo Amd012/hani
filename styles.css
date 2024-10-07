@@ -137,6 +137,8 @@
     body {
         background-image:url("love.jpg");
         padding:50px 90px 150px 90px;
+        background-size:cover;
+        background-repeat:no-repeat;
       }
       .wrapper {
         width: 100%;
@@ -250,6 +252,8 @@
         body {
             background-image:url("love.jpg");
             padding:50px 90px 150px 90px;
+            background-size:cover;
+            background-repeat:no-repeat;
           }
           .wrapper {
             width: 100%;
@@ -366,6 +370,8 @@
     body {
         background-image:url("love.jpg");
         padding:300px 180px 150px 60px;
+        background-size:cover;
+        background-repeat:no-repeat;
       }
       .wrapper {
         width: 100%;
@@ -480,6 +486,8 @@
       body {
           background-image:url("love.jpg");
           padding:150px 360px 150px 180px;
+          background-size:cover;
+          background-repeat:no-repeat;
         }
         .wrapper {
           width: 100%;
@@ -595,6 +603,8 @@
       body {
           background-image:url("love.jpg");
           padding:50px 180px 150px 180px;
+          background-size:cover;
+          background-repeat:no-repeat;
         }
         .wrapper {
           width: 100%;
